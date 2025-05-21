@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Signup Form</title>
+</head>
+<body>
+  <p>Hi, this is signup page.</p>
+  <p>Today is {{ day_of_week }}</p>
+  <p>the time is {{ current_time }}</p>
+
+  <form action="/submit" method="POST">
+      <label for="name">Name</label>
+      <input id="name" type="text" name="name" placeholder="Name">
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" placeholder="Email">
+      <br>
+      <input id="submit" type="submit" value="Submit">
+  </form>
+</body>
+
+<style>
+    body {
+        background-color: antiquewhite;
+    }
+    p {
+        text-align: justify;
+        font-size: 30px;
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+    }
+</style>
+</html>
